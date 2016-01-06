@@ -12,6 +12,7 @@
     	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     	<!-- JS source code -->
     	<script src="js/connection.js"></script>
+    	<script src="js/jquery.js"></script>
     	<!-- Bootstrap CSS -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
     	<!-- Bootstrap modifications -->
@@ -31,15 +32,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">eGoat Start</a>
+                <a class="navbar-brand" href="#" id="start">eGoat Start</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Upload from directory</a>
+                        <a href="#" id="upload">Upload from directory</a>
                     </li>
                     <li>
-                        <a href="#">Search for files</a>
+                        <a href="#" id="search">Search for files</a>
                     </li>
                 </ul>
             </div>
@@ -47,12 +48,16 @@
     	
     	<!-- Application content -->
     	<div class="content">
-  			<div id="logMsgs" class="col-lg-12"></div>
+  			<div id="start-div">Client description</div>
+  			<div id="search-div">Search & download</div>
+  			<div id="upload-div">Upload files from directory</div>
   		</div>
   		
   		<!-- Footer -->
   		<footer>
             <div class="row">
+            <!-- Connection state -->
+            	<div id="logMsgs" class="col-lg-12"></div>
                 <div class="col-lg-12">
                     <p>WUT Faculty of Physics - KKJP 2016</p>
                 </div>

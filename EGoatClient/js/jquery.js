@@ -1,0 +1,19 @@
+$(document).ready(function(){
+	$("#search-div").hide();
+	$("#upload-div").hide();
+    $("#start").click(function(){
+    	$("#start-div").show();
+        $("#search-div").hide();
+        $("#upload-div").hide();
+    });
+    $("#search").click(function(){
+    	$("#search-div").show();
+        $("#start-div").hide();
+        $("#upload-div").hide();
+    });
+    $("#upload").click(function(){
+    	$("#search-div").hide();
+        $("#start-div").hide();
+        $("#upload-div").show();
+    });
+});

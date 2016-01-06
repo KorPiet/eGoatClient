@@ -1,0 +1,63 @@
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="P2P Client compatible with eGoat P2P Server">
+    	<meta name="author" content="Kamila Korzec, Jakub Pietkiewicz">
+        
+        <title>eGoat P2P Client</title>
+        <!-- Public Libraries  -->
+        <script src="http://demo.kaazing.com/lib/client/javascript/StompJms.js" type="text/javascript" language="javascript"></script>
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    	<!-- JS source code -->
+    	<script src="js/connection.js"></script>
+    	<!-- Bootstrap CSS -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<!-- Bootstrap modifications -->
+    	<link href="css/main-style.css" rel="stylesheet">
+    	
+    </head>
+    
+    
+    <body onload="doConnect()">
+    <div class="wrapper">
+    	<!-- Navigation bar -->
+    	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        	<div class="navbar-header">
+            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">eGoat Start</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Upload from directory</a>
+                    </li>
+                    <li>
+                        <a href="#">Search for files</a>
+                    </li>
+                </ul>
+            </div>
+    	</nav>
+    	
+    	<!-- Application content -->
+    	<div class="content">
+  			<div id="logMsgs" class="col-lg-12"></div>
+  		</div>
+  		
+  		<!-- Footer -->
+  		<footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>WUT Faculty of Physics - KKJP 2016</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>

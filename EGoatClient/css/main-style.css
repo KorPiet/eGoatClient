@@ -1,0 +1,15 @@
+
+body {
+    padding-top: 70px;
+}
+
+.navbar-inverse {
+	background-color: black;
+}
+
+.content{}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}

@@ -9,12 +9,11 @@
         <title>eGoat P2P Client</title>
         
         <!-- Public Libraries  -->
-        <script src="http://demo.kaazing.com/lib/client/javascript/StompJms.js" type="text/javascript"></script>
     	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		
     	<!-- JS source code -->
-    	<script src="js/connection.js"></script>
-    	<script src="js/jquery.js"></script>
+    	<script src="js/jquery.js"></script>    	
+    	<script src="js/websockets.js"></script>
     	
     	<!-- Bootstrap CSS -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +24,7 @@
     </head>
     
     
-    <body onload="doConnect()">
+    <body onload="socketTest()">
     	<!-- Navigation bar -->
     	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         	<div class="navbar-header">
@@ -61,7 +60,7 @@
   				to public repositories on GitHub. 
   				<h2>eGoat Client</h2>
   				<strong>eGoat P2P Client</strong> is built as a single page application and
-  				is based on Javascript and JMS API (Java Message Service). User can upload 
+  				is based on jQuery and WebSocket. User can upload 
   				(share) files from directory and search and <strong>directly</strong> download files shared by other
   				users.
   				<h2>eGoat Server</h2>

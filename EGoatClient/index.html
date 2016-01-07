@@ -7,14 +7,18 @@
     	<meta name="author" content="Kamila Korzec, Jakub Pietkiewicz">
         
         <title>eGoat P2P Client</title>
+        
         <!-- Public Libraries  -->
-        <script src="http://demo.kaazing.com/lib/client/javascript/StompJms.js" type="text/javascript" language="javascript"></script>
+        <script src="http://demo.kaazing.com/lib/client/javascript/StompJms.js" type="text/javascript"></script>
     	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		
     	<!-- JS source code -->
     	<script src="js/connection.js"></script>
     	<script src="js/jquery.js"></script>
+    	
     	<!-- Bootstrap CSS -->
     	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	
     	<!-- Bootstrap modifications -->
     	<link href="css/main-style.css" rel="stylesheet">
     	
@@ -22,7 +26,6 @@
     
     
     <body onload="doConnect()">
-    <div class="wrapper">
     	<!-- Navigation bar -->
     	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         	<div class="navbar-header">
@@ -48,9 +51,47 @@
     	
     	<!-- Application content -->
     	<div class="content">
-  			<div id="start-div">Client description</div>
-  			<div id="search-div">Search & download</div>
-  			<div id="upload-div">Upload files from directory</div>
+  			<div id="start-div" class="col-lg-5">
+  				<h1>About eGoat</h1>
+  				<strong>eGoat P2P Client</strong> is a peer-to-peer client compatible with
+  				<strong>eGoat P2P Server</strong> made as a part of an academic
+  				assignment. It's a product of collaboration between Kamila Korzec and
+  				Jakub Pietkiewicz. <br><br>
+  				Source code for both server and client is available down below via links 
+  				to public repositories on GitHub. 
+  				<h2>eGoat Client</h2>
+  				<strong>eGoat P2P Client</strong> is built as a single page application and
+  				is based on Javascript and JMS API (Java Message Service). User can upload 
+  				(share) files from directory and search and <strong>directly</strong> download files shared by other
+  				users.
+  				<h2>eGoat Server</h2>
+  				<strong>eGoat P2P Server</strong>...
+  				<h3>Source code (for Client and Server): </h3>
+  				<a href="https://github.com/KorPiet/eGoatClient"><img src="img/githubClient.png" alt="Client code on GitHub"></a>
+  				<a href="https://github.com/KorPiet/eGoatServer"><img src="img/githubServer.png" alt="Server code on GitHub"></a>
+  				
+  			</div>
+  			<div id="search-div">
+  				<h1>Search & download</h1>
+  				<input type="text" name="search" placeholder="Search by name">
+  				<button id="search-button">Search</button>
+  				<h2>Results:</h2>
+  				<div id="results">
+  					No results yet
+  				</div>
+  			</div>
+  			<div id="upload-div" class="col-lg-5">
+  				<h1>Upload files from directory</h1>
+  				<div hidden="true">
+  					<input id="fileupload" type="file" name="upload" value="Choose a file">
+        		</div>
+        		<div>
+        		Choose a file you want to share:<br><br>
+        		<button id="upload-button">Upload a file</button>
+        		</div>
+				<h2>Uploaded:</h2>
+				<div id="uploaded"></div>
+  			</div>
   		</div>
   		
   		<!-- Footer -->
@@ -63,6 +104,6 @@
                 </div>
             </div>
         </footer>
-    </div>
+    
     </body>
 </html>

@@ -9,24 +9,28 @@ body {
 
 .content{
 	padding-top: 30px;
+	padding-left: 5% ;
 	background-image: url(../img/ekoza.png);
 	background-repeat: no-repeat;
-	height: 90%;
+	background-position: top right;
+	min-height: 90%;
+	position:static;
 	margin: 0px;
 	
 }
 
-.wrapper{
-	min-height: 100%;
-	position: relative;
-	padding-bottom: 70px;
-}
 #logMsgs{
 	color: #9d9d9d;
 	padding-bottom: 10px;
 }
 
+#search-button, #upload-button{
+	color: #9d9d9d;
+	background-color: black;
+	border: none;
+}
+
 footer {
-    position: absolute;
-    bottom: 0;
+    position: static;
+    height: 100px;
 }
